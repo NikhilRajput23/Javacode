@@ -51,6 +51,42 @@
 //     }
 // }
 
+
+
+// import java.util.*;
+// public class counternumber{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         int d=0;
+//         while(n!=0){
+//         n=n/10;
+//         d++;
+//         }
+//         System.out.println(d);
+//     }
+//}
+
+
+// import java.util.*;
+// public class countnumber{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner (System.in);
+//         String a=sc.nextLine();
+//         char arr[]=a.toCharArray();
+//         int c=0;
+//          int b=arr.length-1;
+//          while (c<b) {
+//             char temp=arr[c];
+//             arr[c]=arr[b];
+//             arr[b]=temp;
+//             c++;
+//             b--;
+//            }
+//          System.out.println(new String(arr));
+
+//         }
+//     }
 // import java.util.Scanner;
 
 // public class countnumber{
@@ -77,11 +113,19 @@ public class counternumber{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        int d=0;
-        while(n!=0){
-        n=n/10;
-        d++;
-        }
-        System.out.println(d);
+         int inv=0;
+         int d=1;
+         while(n!=0){
+            int dd=n%10;
+            int a=d;
+            int b=dd;
+            inv=inv+a*(int)Math.pow(10, b-1);
+            n=n/10;
+            d++;
+
+
+         }
+         System.out.println(inv);
     }
+
 }
