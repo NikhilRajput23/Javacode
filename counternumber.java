@@ -108,24 +108,42 @@
 //     }
 // } 
 
+// import java.util.*;
+// public class counternumber{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//          int inv=0;
+//          int d=1;
+//          while(n!=0){
+//             int dd=n%10;
+//             int a=d;
+//             int b=dd;
+//             inv=inv+a*(int)Math.pow(10, b-1);
+//             n=n/10;
+//             d++;
+
+
+//          }
+//          System.out.println(inv);
+//     }
+
+// }
+
 import java.util.*;
-public class counternumber{
+
+public class CounterNumber {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-         int inv=0;
-         int d=1;
-         while(n!=0){
-            int dd=n%10;
-            int a=d;
-            int b=dd;
-            inv=inv+a*(int)Math.pow(10, b-1);
-            n=n/10;
-            d++;
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next(); 
+        String rev = "";
 
+        for (int i = name.length() - 1; i >= 0; i--) {
+            rev += name.charAt(i);
+        }
 
-         }
-         System.out.println(inv);
+        System.out.println("Reversed: " + rev);
     }
-
 }
+
+

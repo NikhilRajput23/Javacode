@@ -8,11 +8,11 @@ public class fibonacc {
         int b=1;
 
         for(int i=1;i<n;i++){
-                                       System.out.println(a);
-
+   System.out.println(a);
             int c=a+b;
               a=b;
                b=c;
+              
 
         }
         
