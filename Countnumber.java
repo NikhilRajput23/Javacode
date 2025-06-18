@@ -130,20 +130,19 @@
 
 // }
 
-import java.util.*;
+// import java.util.*;
 
-public class CounterNumber {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String name = sc.next(); 
-        String rev = "";
+// public class CounterNumber {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         String name = sc.next(); 
+//         String rev = "";
 
-        for (int i = name.length() - 1; i >= 0; i--) {
-            rev += name.charAt(i);
-        }
+//         for (int i = name.length() - 1; i >= 0; i--) {
+//             rev += name.charAt(i);
+//         }
 
-        System.out.println("Reversed: " + rev);
-    }
-}
-
+//         System.out.println("Reversed: " + rev);
+//     }
+// }
 
