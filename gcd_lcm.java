@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class dcd_lcm {
+public class gcd_lcm {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int n1=sc.nextInt();
