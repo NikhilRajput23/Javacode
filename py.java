@@ -1,0 +1,41 @@
+// import java.util.Scanner;
+
+// public class pythagoriastriplet {
+//     public static void main(String [] args){
+//         Scanner sc=new Scanner(System.in);
+//         int a=sc.nextInt();
+//         int b=sc.nextInt();
+//         int c=sc.nextInt();
+        
+//         int max=a;
+//         if(b>=max){
+//             max=b;
+//         }
+//         if(c>=max){
+//             max=c;
+//         }
+//         if(max==a){
+//             boolean flag=((b*b+c*c)==(a*a));
+//             System.out.println(flag);
+//         }else if(max==b){
+//             boolean flag=((a*a+c*c)==(b*b));
+//             System.out.println(flag);
+//         }else{
+//             boolean flag=((a*a+b*b)==(c*c));
+//             System.out.println(flag);
+//         }
+//     }
+// }
+import java.util.Scanner;
+public class py{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        for(int i=2;i<=a;i++){
+            while(a%i==0){
+               a=a/i;
+               System.out.print(i);
+            }
+        }
+    }
+}
