@@ -19,7 +19,7 @@ class pr extends nikhil{
     }
 }
 
-
+bulb
 public class inheri {
     public static void main(String[] args) {
         pr s=new pr();
