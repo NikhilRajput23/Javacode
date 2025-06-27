@@ -17,7 +17,7 @@ public class buy_sell_stock {
             }else if(price-minprice>max){
                 max=price-minprice;
             }
-          }
+          }     
  System.out.println(max);
     }
 }
