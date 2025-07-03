@@ -53,7 +53,12 @@ import java.util.Scanner;
 public class prime{
     public static void main(String[] args) {
     Scanner sc=new Scanner(System.in);
+    int a=sc.nextInt();
+    int b=sc.nextInt();
+  sc.nextLine();
     String n=sc.nextLine();
-    System.out.println(n.toLowerCase());
+        int c=a+b;
+    System.out.println(c+n);
+  
     }
 }

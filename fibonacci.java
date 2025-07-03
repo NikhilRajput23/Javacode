@@ -26,4 +26,9 @@ public class fibonacci {
         return a;
         
     }
+
+      public void twosum() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'twosum'");
+      }
 }
