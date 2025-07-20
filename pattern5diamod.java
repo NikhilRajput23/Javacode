@@ -16,7 +16,8 @@ public class pattern5diamod {
         if(i <=n/2){
             sp--;
             st+=2;
-        }else{
+        }
+    else{
             sp++;
             st-=2;
         }
