@@ -16,7 +16,7 @@ public class anttodecimal {
             int dig=n%10;
             n=n/10;
             rv+=dig*p;
-            p=p*r;
+            p=p*r;  
         }
         return rv;
     }
