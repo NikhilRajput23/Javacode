@@ -20,9 +20,9 @@ public static int anytodecimal(int n,int r){
         int p=1;
 
         while(n>0){
-            int dig=n%10;
-            n=n/10;
-            rv+=dig*p;
+            int dig = n%10;
+            n = n/10;
+            rv += dig*p;
             p=p*r;  
         }
         return rv;
@@ -42,7 +42,3 @@ public static int anytodecimal(int n,int r){
 
     }
 }
-
-
-
-    
