@@ -1,16 +1,8 @@
-import java.util.Scanner;
-
-public class countnumber {
-    public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int d=0;
-        while(n!=0){
-            n=n/10;
-            d++;
-
-        }
-        System.out.println(d);
-        
-    }
-}
+ // System.out.println(set);
+        // if(set.contains(1)){
+        //     System.out.println("value exist");
+        // }
+        // set.remove(1);
+        // if(!set.contains(1)){
+        //     System.out.println("value nahi aahe ");
+        // }
