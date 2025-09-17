@@ -12,8 +12,9 @@ int sp=n-1;
          for(int s=1;s<=st;s++){
                 System.out.print("* ");
         }
-               sp--;
                st++;
+               sp--;
+               
                 System.out.println();
             
             
