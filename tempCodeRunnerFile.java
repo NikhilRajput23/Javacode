@@ -1,8 +1,10 @@
- // System.out.println(set);
-        // if(set.contains(1)){
-        //     System.out.println("value exist");
-        // }
-        // set.remove(1);
-        // if(!set.contains(1)){
-        //     System.out.println("value nahi aahe ");
-        // }
+     int full=numb;
+        int empty=numb;
+        while(empty>=nume){
+            int newbottle=empty/nume;
+            full+=newbottle;
+            empty=newbottle+(empty%nume);
+            nume++;
+
+        }
+        return ful
