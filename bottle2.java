@@ -16,7 +16,7 @@ public class bottle2{
       Scanner sc=new Scanner(System.in);
       int numb=sc.nextInt();
       int nume=sc.nextInt();
-      waterbottle2 vs=new waterbottle2();
+      bottle2 vs=new bottle2();
       int a=vs.bottle( numb, nume);
       System.out.println(a);
 
