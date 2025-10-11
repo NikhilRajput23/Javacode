@@ -1,74 +1,48 @@
 import java.util.*;
-class nikhil {
-    int data;
-    nikhil left;
-    nikhil right;
+public class spells_potion {
+    public static int[] max(int[]spell,int[]position,long su){
+        int n=spell.length;
+        int m=position.length;
+        int [] re=new int[n];
+        for(int i=0;i<n;i++){
+            int s=spell[i];
+         int left=0;
+         int right=m-1;
+         while(left<=right){
+            int mid=(left+right)/2;
+            long p= (long)position[mid]*su;
+if(p>su){
+    right=mid-1;
 
-    nikhil(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;
+}else{
+    left=left+1;
+
+}
+
+
+         }
+         re[i]=m-left;
+        }
+            return re;
+
     }
-}   
-public class BST {
-
-    public static nikhil insert(nikhil root, int val) {
-        if (root == null) {
-            root = new nikhil(val);
-            return root;
+    public static void main(String []args){
+        Scanner sc=new Scanner(System.in);
+        int spell=sc.nextInt();
+        int []arr=new int[spell];
+        for(int i=0;i<arr.length;i++){
+            arr[i]=sc.nextInt();
         }
+        int position=sc.nextInt();
 
-        if (val < root.data) {
-            root.left = insert(root.left, val);
-        } else {
-            root.right = insert(root.right, val);
+        int []arr1=new int[position];
+        for(int i=0;i<arr1.length;i++){
+            arr1[i]=sc.nextInt();
         }
-
-        return root;
-    }
-
-    public static void inorder(nikhil root) {
-        if (root == null) {
-            return;
-        }
-        inorder(root.left);
-        System.out.print(root.data + " ");
-        inorder(root.right);
-    }
-    public static boolean search(nikhil root,int key){
-        if(root == null){
-            return false;
-        }
-        if(root.data>key){
-            return search(root.left,key);
-        }else if(root.data==key){
-            return true;
-        }else{
-            return search(root.right,key);
-        }
-    }
-
-    public static void main(String[] args) {
-              Scanner sc=new Scanner(System.in);
-       int n=sc.nextInt();
-       int []values=new int[n];
-       for(int i=0;i<values.length;i++){
-        values[i]=sc.nextInt();
-       }
-       int key =sc.nextInt();
-               nikhil root = null;
-
-        for (int val : values) {
-            root = insert(root, val);
-        }
-
-        inorder(root);
-        System.out.println();
-        if(search(root , key)){
-        System.out.println("found");
-        }else{
-                    System.out.println("not found");
-
-        }
+        long su=sc.nextLong();
+        int ans=spells_potion.max(spell, position, su);
+ System.out.println(ans);
+     
+        
     }
 }
