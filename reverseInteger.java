@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class reverseInteger {
     public int re(int x){
         long rev=0;
@@ -13,3 +15,12 @@ public class reverseInteger {
             return (int)rev;
         }
     }
+public static void main(String[] args) {
+    Scanner sx=new Scanner(System.in);
+    int x=sx.nextInt();
+    reverseInteger vs=new reverseInteger();
+   int a= vs.re(x);
+   System.out.println(a);
+
+}
+}
