@@ -17,7 +17,6 @@ public class arraylistcode {
                 it.remove();
             }
         }
-        
         System.out.println(lt);
     }
 }
